@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selig Anex</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="banner-image">
+        <img src="imgs/home.jpg" height="100px" width="100%" alt="Banner Image">
+        <div class="banner-content">
+            <h1>Selig Annex</h1>
+            <p>Moshi, Tanzania</p>
+            <p><i class="fas fa-map-marker-alt"></i> Moshi, Tanzania | Karibu!</p>
+        </div>
+    </div>
+
+    <div class="container">
+         <!-- Header Section -->
+  
+    <!-- Tabs Section -->
+    <div class="tabs"> <a href="home.html">
+      <button class="tab" data-section="Mocktails">Cocktail & Mocktail</button> </a>
+      <a href="drinks.html"><button class="tab active" data-section="Drinks">Drinks</button></a>
+      <a href="hot-drinks.html"><button class="tab" data-section = "hot-drinks">Hot drinks</button></a>
+      <a href="menu.html"><button class="tab" data-section="Menu">Menu</button></a>
+      <!--<button class="tab" data-section="Coffee">HighView Coffee</button>
+      <button class="tab" data-section="Mocktails">Cocktail & Mocktail</button> -->
+      <!-- <button class="tab" data-section="gallery">Living Gallery (High View) </button>
+      <button class="tab" data-section="spa">SPA</button>
+      <button class="tab" data-section="sangoma">Acrobatic show (Highview Hotel)</button>
+      <button class="tab" data-section="Activities">Activities</button>
+      <button class="tab" data-section="forms" onclick="window.location.href='Zita_Consent_Form_Online_Embedded_Logo.html'">Comment Form</button> !-->
+    </div>
+     <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search" class="search-input">
+      <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+
+            <!--Drinks Categories-->
+        <div id="Drinks" class="section active">
+    <div class="main-menu" >
+      <h2 class="section-heading">DRINKS</h2>
+    <div class="product-cards">
+        
+      <div class="card" onclick="showSubMenu('soda')">
+        <img src="images/drinks /soda/cocacola.jpg" alt="soda" class="card-image">
+        <h2>SODA</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('Smoothie')">
+        <img src="images/drinks /smoothies/banana smoothie.jpg" alt="soda" class="card-image">
+        <h2>SMOTHIES</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('milkshake')">
+        <img src="images/drinks /milk-shake/chocolate milkshake.jpg" alt="soda" class="card-image">
+        <h2>MILKSHAKE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('beer')">
+        <img src="images/drinks /beer/safari.jpg" alt="beer" class="card-image">
+        <h2>BEER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('whiskey')">
+        <img src="images/drinks /whiskey/black-label.jpg" alt="whiskey" class="card-image">
+        <h2>WHISKEY</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('gin')">
+        <img src="images/drinks /Gin/bombay-saphire.jpg" alt="gin" class="card-image">
+        <h2>GIN & SPIRIT</h2>
+      </div> 
+      <div class="card" onclick="showSubMenu('Liquer')">
+        <img src="images/drinks /liqueur /amarula.jpg" alt="liquer" class="card-image">
+        <h2>LIQUER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('red-wine')">
+        <img src="images/drinks /red-wine/serengeti red wine.jpg" alt="red-wine" class="card-image">
+        <h2>RED WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('aperatifs')">
+        <img src="images/drinks /aperatifs/campari.jpg" alt="aperatifs" class="card-image">
+        <h2>APERATIFS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('vodka')">
+        <img src="images/drinks /vodka/absolute.jpg" alt="vodka" class="card-image">
+        <h2>VODKA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('brandy')">
+        <img src="images/drinks /brandy/HENNESSY VSOP.jpg" alt="brandy" class="card-image">
+        <h2>COURQNAQ & BRANDY</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('tequila')">
+        <img src="images/drinks /tequila/tequila-gold.jpg" alt="tequila" class="card-image">
+        <h2>TEQUILA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('rum')">
+        <img src="images/drinks /rum/CAPTAIN MORGAN JAMAICAN.jpg" alt="rum" class="card-image">
+        <h2>RUM</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('white-wine')">
+        <img src="images/drinks /white whine/NEDERBURG.jpg" alt="white-wine" class="card-image">
+        <h2>WHITE WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sparkling-wine')">
+        <img src="images/drinks /sparkling-wine/JCL ROUX.jpg" alt="sparkling-wine" class="card-image">
+        <h2>SPARKLING WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('champagne')">
+        <img src="images/drinks /champagne/MOET ET CHANDON IMPERIAL-BRUT.jpg" alt="champagne" class="card-image">
+        <h2>CHAMPAGNE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('non-sparkling-wine')">
+        <img src="images/drinks /sparkling-wine/pure-heaven.jpg" alt="sparkling-wine" class="card-image">
+        <h2>SPARKLING WINE NON ALCOHOL</h2>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+      <!--Soda-->
+    <div id="soda-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /soda/cocacola zero.jpg" alt="Coke" class="some-image">
+            <div class="card-details">
+              <h5>CocaCola zero</h5>
+              <h5>2,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/cocacola.jpg" alt="coca" class="some-image">
+            <div class="card-details">
+              <h5>cocalcola</h5>
+              <h5>2,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/fanta.jpg" alt="fanta" class="some-image">
+            <div class="card-details">
+              <h5>fanta</h5>
+              <h5>2,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/SPAR-letta.jpg" alt="Spar-lleta" class="some-image">
+            <div class="card-details">
+              <h5>Spar-lleta</h5>
+              <h5>2,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/ginger ale.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>Ginger Ale</h5>
+              <h5>2,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/sprite.jpg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>Sprite</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/stoney-tangawizi.jpg" alt="Soda-water" class="some-image">
+            <div class="card-details">
+              <h5>Stony Tangawizi</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/bitterlemon.jpg" alt="Tonic-water" class="some-image">
+            <div class="card-details">
+              <h5>Bitter lemon</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/tonic-water.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Tonic Water</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /soda/soda-water.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Soda Water</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/sparkling-water.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>sparkling Water</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/kilianjarowater 1ltr.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Big Water 1.5Ltr</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/kilimanjarowater-05ltrs.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>small Water 0.5Ltr</h5>
+              <h5>1,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/pepsi.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>pepsi</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/mirinda.png" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Mirinda </h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/7up.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>7 UP</h5>
+              <h5>2,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/redbull.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Red-Bull</h5>
+              <h5>5,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/grand-malta.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Grand Malta </h5>
+              <h5>4,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/applepunch.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Apple Punch </h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/azam-energy-drink.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Azam Energy</h5>
+              <h5>4,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/ceres.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>ceres 1ltr </h5>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /soda/bavaria.png" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Bavaria </h5>
+              <h5>5,000</h5>
+            </div> 
+          </div>
+    </div>
+    </div>
+    <!--SMOTHIES-->
+    <div id="Smoothie-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /smoothies/banana smoothie.jpg" alt="beer" class="some-image">
+            <div class="card-details">
+              <h5>BANANA SMOOTH</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /smoothies/mango-smoothie.jpg" alt="Kilimanjaro" class="some-image">
+            <div class="card-details">
+              <h5>MANGO SMOOTH</h5>
+              <h5>$12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /smoothies/mango-passion smoothie.jpg" alt="Safari" class="some-image">
+            <div class="card-details">
+              <h5>MANGO PASSION, SMOOTH</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /smoothies/banana-milk-dates smoothie.jpg" alt="redbull" class="some-image">
+            <div class="card-details">
+              <h5>DATES ,MILK ,BANANA, SMOOTH</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /smoothies/banana-milk-avocado smoothie.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>AVOCADO,BANANA,MILK,SMOOTH</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+    
+    </div> 
+    </div>
+    <!--MILKSHAKE-->
+    <div id="milkshake-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /milk-shake/chocolate milkshake.jpg" alt="beer" class="some-image">
+            <div class="card-details">
+              <h5>CHOCOLATE  MILK SHAKE</h5>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /milk-shake/vanilla&strawberry milkshake.jpg" alt="Kilimanjaro" class="some-image">
+            <div class="card-details">
+              <h5>VANILLA &STRAWBERRY MILK SHAKE</h5>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /milk-shake/strawberry milkshake.jpg" alt="Safari" class="some-image">
+            <div class="card-details">
+              <h5>STRAWBERRY MILK SHAKE</h5>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /milk-shake/banana milkshake.jpg" alt="redbull" class="some-image">
+            <div class="card-details">
+              <h5>BANANA MILK SHAKE</h5>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+    
+    </div> 
+    </div>
+
+
+    <!--Beer-->
+    <div id="beer-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /beer/safari.jpg" alt="beer" class="some-image">
+            <div class="card-details">
+              <h5>Safari</h5>
+              <h5>3,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /beer/kilimanjaro.jpg" alt="Kilimanjaro" class="some-image">
+            <div class="card-details">
+              <h5>Kilimanjaro</h5>
+              <h5>3,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /beer/castle-lite.jpg" alt="Safari" class="some-image">
+            <div class="card-details">
+              <h5>Castle lite</h5>
+              <h5>3,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /beer/serengeti.jpg" alt="redbull" class="some-image">
+            <div class="card-details">
+              <h5>Serengeti</h5>
+              <h5>3,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /beer/GUINNESS.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>Guiness</h5>
+              <h5>3,000</h5>
+            </div>
+            
+          </div>
+         <div class="card">
+            <img src="images/drinks /beer/SMIRRNOFF ICE BLACK.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>SMIRRNOFF ICE BLACK</h5>
+              <h5>5,000</h5>
+            </div> 
+         </div>
+         <div class="card">
+            <img src="images/drinks /beer/SMIRRNOFF ICE RED.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>SMIRRNOFF ICE RED</h5>
+              <h5>5,000</h5>
+            </div> 
+         </div>
+          <div class="card">
+            <img src="images/drinks /beer/flying fish.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>FLYING FISH</h5>
+              <h5>5,000</h5>
+            </div> 
+         </div>
+           <div class="card">
+            <img src="images/drinks /beer/Heineken.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>HEINEKEN</h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+         <div class="card">
+            <img src="images/drinks /beer/windhock.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>WINDHOCK</h5>
+              <h5>5,000</h5>
+            </div> 
+         </div>
+         <div class="card">
+            <img src="images/drinks /beer/savanna.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>SAVANNAH</h5>
+              <h5>6,000</h5>
+            </div> 
+         </div>
+          <div class="card">
+            <img src="images/drinks /beer/desperado.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>DESPERADO</h5>
+              <h5>6,000</h5>
+            </div> 
+         </div>
+          <div class="card">
+            <img src="images/drinks /beer/heineken silver.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>HEINEKEN SILVER</h5>
+              <h5>6,000</h5>
+            </div> 
+         </div>
+          <div class="card">
+            <img src="images/drinks /beer/brutal.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>BRUTAL</h5>
+              <h5>6,000</h5>
+            </div> 
+         </div>
+    </div> 
+    </div>
+
+<!--whiskey-->
+<div id="whiskey-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /whiskey/GLENFIDDICH (12)  ML750.jpg" alt="Jameson" class="some-image">
+            <div class="card-details">
+              <h5>GLENFIDDICH (12)  ML750</h5>
+              <h5>TOT: 7,000 , Bottle: 175,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/GLENFIDDICH (15)  ML750.jpg" alt="Johnny-walker-red-label" class="some-image">
+            <div class="card-details">
+              <h5>GLENFIDDICH (15)  ML750</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/black-label.jpg" alt="Johnny-walker-black-label" class="some-image">
+            <div class="card-details">
+              <h5>Johnny Walker Black-label</h5>
+              <h5>TOT: 10,000 , Bottle: 235,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/FAMOUS GROUSE ML750.jpg" alt="Jack-daniels" class="some-image">
+            <div class="card-details">
+              <h5>FAMOUS GROUSE ML750</h5>
+             <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/teachers.jpg" alt="Glendfiddich" class="some-image">
+            <div class="card-details">
+              <h5>TEACHER'S  ML750</h5>
+              <h5>TOT: 4,000 , Bottle: 55,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/jameson.jpg" alt="Dahlwinnie" class="some-image">
+            <div class="card-details">
+              <h5>JAMESON  ML750</h5>
+              <h5>TOT: 6,000 , Bottle: 80,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/southern-comfort.jpg" alt="grants" class="some-image">
+            <div class="card-details">
+              <h5>SOUTHERN COMFORT  ML750</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>
+            
+          </div>
+           <div class="card">
+            <img src="images/drinks /whiskey/jack-daniels.jpg" alt="vant-69" class="some-image">
+            <div class="card-details">
+              <h5>JACK DANIEL ML 750</h5>
+              <h5>TOT: 6,000 , Bottle: 100,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/jack-daniels-honey.jpg" alt="vant-69" class="some-image">
+            <div class="card-details">
+              <h5>JACK DANIEL HONEY ML700</h5>
+              <h5>TOT: 7,000 , Bottle: 140,000</h5>
+            </div> 
+          </div>
+              <div class="card">
+            <img src="images/drinks /whiskey/red-label.jpg" alt="Glendfiddich" class="some-image">
+            <div class="card-details">
+              <h5>JOHNNIE  WALKER RED LABEL ML750</h5>
+              <h5>TOT: 6,000 , Bottle: 65,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/black-label.jpg" alt="Dahlwinnie" class="some-image">
+            <div class="card-details">
+              <h5>JOHNNIE WALKER BLACK LABEL ML750</h5>
+              <h5>TOT: 7,000 , Bottle: 125,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/jim-beam.jpg" alt="grants" class="some-image">
+            <div class="card-details">
+              <h5>JIM BEAM  ML750</h5>
+              <h5>TOT: 7,000 , Bottle: 90,000</h5>
+            </div>
+            
+          </div>
+           <div class="card">
+            <img src="images/drinks /whiskey/J&B.jpg" alt="vant-69" class="some-image">
+            <div class="card-details">
+              <h5> J&B ML750</h5>
+              <h5>TOT: 4,000 , Bottle: 65,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/chivas regal.jpg" alt="vant-69" class="some-image">
+            <div class="card-details">
+              <h5>CHIVAS REGAL ML750</h5>
+              <h5>TOT: 7,000 , Bottle: 140,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /whiskey/ballantine.jpg" alt="vant-69" class="some-image">
+            <div class="card-details">
+              <h5>BALLANTINE'S  ML750</h5>
+              <h5>TOT: 5,000 , Bottle: 75,000</h5>
+            </div> 
+          </div>
+    </div>
+    </div>
+
+    <!--Gin & Spirit-->
+    <div id="gin-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /Gin/gordons-gin.jpg" alt="Konyagi" class="some-image">
+            <div class="card-details">
+              <h5>GORDON'S  GIN   ML750</h5>
+              <h5>TOT: 5,000 , Bottle: 70,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /Gin/TANQUARAY-GIN.jpg" alt="Tanqueray" class="some-image">
+            <div class="card-details">
+              <h5>TANQUARAY GIN   ML750</h5>
+              <h5>TOT: 5,000 , Bottle: 70,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /Gin/bombay-saphire.jpg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>BOMBAY SAPHIRE  ML750</h5>
+              <h5>TOT: 5,000 , Bottle: 75,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /Gin/hendrick.jpg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>HENDRICK   ML750</h5>
+              <h5>TOT: 7,000 , Bottle: 150,000</h5>
+            </div>
+            
+            </div>
+          <div class="card">
+            <img src="images/drinks /Gin/beefeater.jpg" alt="k-vant" class="some-image">
+            <div class="card-details">
+              <h5>BEEFEATER   ML750</h5>
+              <h5>TOT: 4,000 , Bottle: 65,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /Gin/KONYAGI-750-ML.jpg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>KONYAGI  ML750</h5>
+              <h5>TOT: 3,000 , Bottle: 30,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /Gin/K-Vant.jpg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>K VANT  ML750</h5>
+              <h5>TOT: 3,000 , Bottle: 25,000</h5>
+            </div>
+            
+            </div>
+          <div class="card">
+            <img src="images/drinks /Gin/tanzanite-gin.jpg" alt="k-vant" class="some-image">
+            <div class="card-details">
+              <h5>TANZANITE   ML750</h5>
+              <h5>TOT: 3,000 , Bottle: 25,000</h5>
+            </div> 
+          </div>
+          
+          </div>
+    </div>
+    
+    <!--liquer-->
+    <div id="Liquer-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /liqueur /zapper-bottles.jpg" alt="Wild Africa" class="some-image">
+            <div class="card-details">
+              <h5>ZAPPA  ML750</h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /ARCHER'S SCHNAPPS.jpg" alt="Amarula" class="some-image">
+            <div class="card-details">
+              <h5>ARCHER'S SCHNAPPS ML 750</h5>
+              <h5>TOT: 4,000 , Bottle: 55,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /tripple-sec.jpg" alt="khalua" class="some-image">
+            <div class="card-details">
+              <h5>TRIPPLE SEC/ORANGE LIQUEUR ML 750</h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /khalua.jpg" alt="cointreau" class="some-image">
+            <div class="card-details">
+              <h5>KHALUA </h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /baileys.jpg" alt="Tripple sec" class="some-image">
+            <div class="card-details">
+              <h5>BAILEYS </h5>
+              <h5>TOT: 4,000 , Bottle: 65,000</h5>
+            </div> 
+          </div> 
+          <div class="card">
+            <img src="images/drinks /liqueur /cointreau.jpg" alt="Amarula" class="some-image">
+            <div class="card-details">
+              <h5>COUNTREAU  ML 750</h5>
+              <h5>TOT: 4,000 , Bottle: 90,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /drambue.jpg" alt="khalua" class="some-image">
+            <div class="card-details">
+              <h5>DRAMBUE</h5>
+              <h5>TOT: 4,000 , Bottle: 80,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /amaretto.jpg" alt="cointreau" class="some-image">
+            <div class="card-details">
+              <h5>AMARETTO </h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /amarula.jpg" alt="Tripple sec" class="some-image">
+            <div class="card-details">
+              <h5>AMARULA </h5>
+              <h5>TOT: 4,000 , Bottle: 55,000</h5>
+            </div> 
+          </div> 
+          <div class="card">
+            <img src="images/drinks /liqueur /liquore-crema-banana.jpg" alt="Amarula" class="some-image">
+            <div class="card-details">
+              <h5>BANANA CREAM</h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /black-current-cream.jpg" alt="khalua" class="some-image">
+            <div class="card-details">
+              <h5>BLACK CURRAENT CREAM</h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /blue-carracao.jpg" alt="cointreau" class="some-image">
+            <div class="card-details">
+              <h5>BLUE CARRACAO </h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /liqueur /jagermaster.jpg" alt="Tripple sec" class="some-image">
+            <div class="card-details">
+              <h5> JAGERMESTER   ML 750 </h5>
+              <h5>TOT: 3,500 , Bottle: 70,000</h5>
+            </div> 
+          </div> 
+           <div class="card">
+            <img src="images/drinks /liqueur /TRIPPLE SEC.jpg" alt="Tripple sec" class="some-image">
+            <div class="card-details">
+              <h5> PEPERMINT TRIPPLE SEC</h5>
+              <h5>TOT: 3,000 , Bottle: 40,000</h5>
+            </div> 
+          </div>
+        </div>    
+    </div>
+    
+    <!--red wine-->
+    <div id="red-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /red-wine/KWV PINOTAGE.png" alt="leopard" class="some-image">
+            <div class="card-details">
+              <h5>KWV PINOTAGE</h5>
+              <h5>50,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/serengeti red wine.jpg" alt="la motte" class="some-image">
+            <div class="card-details">
+              <h5>SERENGETI SWEET RED</h5>
+              <h5>50,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/PRESIDENTIAL.jpg" alt="bigi vipra" class="some-image">
+            <div class="card-details">
+              <h5>PRESIDENTIAL</h5>
+              <h5>90,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/AMBASSADOR.jpg" alt="solar viejo" class="some-image">
+            <div class="card-details">
+              <h5>AMBASSADOR</h5>
+              <h5>40,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/drostfy hof red-wine.jpg" alt="vipra red" class="some-image">
+            <div class="card-details">
+              <h5>DROSTDY HOF</h5>
+              <h5>35,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/four-cousin.jpg" alt="perl-bay red" class="some-image">
+            <div class="card-details">
+              <h5>FOUR CUORSIN</h5>
+              <h5>35,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/DOMPO.jpg" alt="serengeti-shiraz" class="some-image">
+            <div class="card-details">
+              <h5>DOMPO</h5>
+              <h5>35,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /red-wine/KWV MERLOT.jpg" alt="merlot" class="some-image">
+            <div class="card-details">
+              <h5>KWV MERLOT</h5>
+              <h5>50,000</h5>
+            </div> 
+          </div>
+          
+    </div>
+    </div>
+    <!--Apperatifs-->
+     <div id="aperatifs-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /aperatifs/martini.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>MARTINI (BIANCO,DRY,ROSSO)</h5>
+              <h5>TOT: 4,000 , Bottle: 50,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /aperatifs/campari.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CAMPARI</h5>
+              <h5>TOT: 4,000 , Bottle: 80,000</h5>
+            </div>
+          </div>
+         <div class="card">
+            <img src="images/drinks /aperatifs/pimm's no.1.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>PIMM'S NO.1</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>
+          </div> 
+          <div class="card">
+            <img src="images/drinks /aperatifs/CINZANO.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>CINZANO(ROSSO,BIANCO)</h5>
+              <h5>TOT: 4,000 , Bottle: 50,000</h5>
+            </div>
+          </div> 
+    </div>
+    </div>
+
+    <!--Vodka-->
+    <div id="vodka-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /vodka/absolute.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>ABSOLUTE VODKA ML750</h5>
+              <h5>TOT: 4,000 , Bottle: 70,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /vodka/smirnoff.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>SMIRNOFF VODKA ML750</h5>
+              <h5>TOT: 3,500 , Bottle: 55,000</h5>
+            </div>
+          </div>
+         <div class="card">
+            <img src="images/drinks /vodka/pushkin.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>PUSHKIN VODKA ML750</h5>
+              <h5>TOT: 3,500 , Bottle: 55,000</h5>
+            </div>
+          </div> 
+    </div>
+    </div>
+
+    <!--brandy-->
+    <div id="brandy-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /brandy/hennessy vs.jpg" alt="Hennessy" class="some-image">
+            <div class="card-details">
+              <h5>HENNESSY V.S</h5>
+              <h5>TOT: 6,000 , Bottle: 150,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="images/drinks /brandy/HENNESSY VSOP.jpg" alt="Martell" class="some-image">
+            <div class="card-details">
+              <h5>HENNESSY V.S.O.P</h5>
+              <h5>TOT: 8,000 , Bottle: 220,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /brandy/KWV BRANDY.jpg" alt="Hennessy" class="some-image">
+            <div class="card-details">
+              <h5>KWV BRANDY</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="images/drinks /brandy/Valeur-750ml.jpg" alt="Martell" class="some-image">
+            <div class="card-details">
+              <h5>VALUER</h5>
+              <h5>TOT: 3,000 , Bottle: 25,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /brandy/MARTELL VS.jpg" alt="Hennessy" class="some-image">
+            <div class="card-details">
+              <h5>MARTELL VS</h5>
+              <h5>TOT: 6,000 , Bottle: 110,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="images/drinks /brandy/martel-vsop-700ml.jpg" alt="Martell" class="some-image">
+            <div class="card-details">
+              <h5>MARTELLY VSOP</h5>
+              <h5>TOT: 8,000 , Bottle: 220,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /brandy/hanson-choice.jpg" alt="Martell" class="some-image">
+            <div class="card-details">
+              <h5>HANSON CHOICE</h5>
+              <h5>TOT: 4,000 , Bottle: 50,000</h5>
+            </div> 
+          </div>
+          
+    </div>
+    </div>
+
+    <!--tequila-->
+    <div id="tequila-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/tequila/camino tequila.jpeg" alt="camino" class="some-image">
+            <div class="card-details">
+              <h5>TEQUILA WHITE/CAMINO</h5>
+              <h5>TOT: 3,500 , Bottle: 60,000</h5>
+            </div>
+            
+          </div>
+         <div class="card">
+            <img src="imgs/tequila/pation anejo.jpg" alt="Patiano anejo" class="some-image">
+            <div class="card-details">
+              <h5>TEQUILA GOLD</h5>
+              <h5>TOT: 3,500 , Bottle: 60,000</h5>
+            </div>
+            
+          </div>
+           <div class="card">
+            <img src="imgs/tequila/pation anejo.jpg" alt="Patiano anejo" class="some-image">
+            <div class="card-details">
+              <h5>TEQUILA/OLMECA</h5>
+              <h5>TOT: 3,500 , Bottle: 60,000</h5>
+            </div>
+            
+          </div>
+         
+        </div>    
+    </div>
+    <!--RUM-->
+    <div id="rum-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /rum/BACARD WHITE.jpg" alt="BACARD WHITE" class="some-image">
+            <div class="card-details">
+              <h5>BACARD WHITE</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>
+          </div>
+         <div class="card">
+            <img src="images/drinks /rum/CAPTAIN MORGAN SPICED.jpg" alt="barcadi black" class="some-image">
+            <div class="card-details">
+              <h5>CAPTAIN MORGAN SPICED</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>   
+          </div>
+          <div class="card">
+            <img src="images/drinks /rum/CAPTAIN MORGAN JAMAICAN.jpg" alt="barcadi white" class="some-image">
+            <div class="card-details">
+              <h5>CAPTAIN MORGAN JAMAICAN</h5>
+              <h5>TOT: 4,000 , Bottle: 60,000</h5>
+            </div>   
+          </div>
+           <div class="card">
+            <img src="images/drinks /rum/malibu.jpg" alt="barcadi white" class="some-image">
+            <div class="card-details">
+              <h5>MALIBU  CARRIBEANCOCONUT RUM</h5>
+              <h5>TOT: 4,000 , Bottle: 70,000</h5>
+            </div>   
+          </div>
+         <!--<div class="card">
+            <img src="imgs/rum/malibu.webp" alt="Malibu" class="some-image">
+            <div class="card-details">
+              <h5>Malibu</h5>
+              <h5>$3</h5>
+            </div>   
+          </div> -->
+    </div>
+    </div>
+    <!--White Wine-->
+    <div id="white-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /white whine/overmeer.jpg" alt="la motte sauvignon" class="some-image">
+            <div class="card-details">
+              <h5>OVERMEER</h5>
+              <h5>TOT: 5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/namaqua.jpg" alt="leopard leap" class="some-image">
+            <div class="card-details">
+              <h5>NAMAQUA</h5>
+              <h5>TOT: 5,000</h5>
+            </div>
+            
+          </div>
+ 
+          <div class="card">
+            <img src="images/drinks /white whine/DROSTDY HOF.jpg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>DROSTDY HOF</h5>
+              <h5>TOT: 5,000 , Bottle: 30,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/FOUR COURSIN.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>FOUR COURSIN</h5>
+              <h5>Bottle: 30,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/TALL HORSE.jpg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>TALL HORSE</h5>
+              <h5>Bottle: 30,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/ROBERT SON WHITE.jpg" alt="perl-bay white" class="some-image">
+            <div class="card-details">
+              <h5>ROBERT SON WHITE</h5>
+              <h5>Bottle: 30,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/SHARYE.jpg" alt="landskrron" class="some-image">
+            <div class="card-details">
+              <h5>SHARYE</h5>
+              <h5>Bottle: 30,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/KWV  CHENIN  BLANC.jpg" alt="landskroon" class="some-image">
+            <div class="card-details">
+              <h5>KWV  CHENIN  BLANC</h5>
+              <h5>Bottle: 50,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/KWV SAUVIGNON BLANC.jpg" alt="chardonay" class="some-image">
+            <div class="card-details">
+              <h5>KWV SAUVIGNON BLANC</h5>
+              <h5>Bottle: 50,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /white whine/NEDERBURG.jpg" alt="chardonay" class="some-image">
+            <div class="card-details">
+              <h5>NEDERBURG</h5>
+              <h5>Bottle: 30,000</h5>
+            </div> 
+          </div>
+          </div>
+    </div>
+    <!--Sparkling wine-->
+    <div id="sparkling-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/ANDRE-ALL-FLAVORS.jpg" alt="freixenet" class="some-image">
+            <div class="card-details">
+              <h5>ANDRE</h5>
+              <h5>30,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/NEDERRBURG.jpg" alt="dubois" class="some-image">
+            <div class="card-details">
+              <h5>NEDERRBURG</h5>
+              <h5>45,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /sparkling-wine/FREIXENET.jpg" alt="dubois" class="some-image">
+            <div class="card-details">
+              <h5>FREIXENET</h5>
+              <h5>50,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/JCL ROUX.jpg" alt="dubois" class="some-image">
+            <div class="card-details">
+              <h5>JCL ROUX</h5>
+              <h5>40,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /sparkling-wine/PROVETTO.jpg" alt="dubois" class="some-image">
+            <div class="card-details">
+              <h5>PROVETTO</h5>
+              <h5>50,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/drinks /sparkling-wine/pure-heaven.jpg" alt="dubois" class="some-image">
+            <div class="card-details">
+              <h5>PURE HEAVEN</h5>
+              <h5>30,000</h5>
+            </div> 
+          </div>
+    </div>
+    </div>
+
+    <!--chapgane-->
+    <div id="champagne-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /champagne/MOET ET CHANDON IMPERIAL-BRUT.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>MOET ET CHANDON IMPERIAL-BRUT</h5>
+              <h5>220,000</h5>
+            </div>  
+          </div>
+          <div class="card">
+            <img src="images/drinks /champagne/MOET ET CHANDON IMPERIAL-ROSE.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>MOET ET CHANDON IMPERIAL-ROSE</h5>
+              <h5>240,000</h5>
+            </div>  
+          </div>
+          <div class="card">
+            <img src="images/drinks /champagne/BELAIRE.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>BELAIRE</h5>
+              <h5>180,000</h5>
+            </div>  
+          </div>
+         
+    </div>
+    </div>
+    <!--NON ALCOHOL SPARKLING WINE-->
+        <div id="non-sparkling-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/pure-heaven.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>PURE HERAVEN</h5>
+              <h5>35,000</h5>
+            </div>  
+          </div>
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/ROBERTSON WINERY.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>ROBERTSON WINERY</h5>
+              <h5>40,000</h5>
+            </div>  
+          </div>
+          <div class="card">
+            <img src="images/drinks /sparkling-wine/ROBERTSON WINERY.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>ROBERTSON WINERY</h5>
+              <h5>45,000</h5>
+            </div>  
+          </div>
+           <div class="card">
+            <img src="images/drinks /sparkling-wine/FREIXENET.jpg" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>FREIXENET</h5>
+              <h5>50,000</h5>
+            </div>  
+          </div>
+         
+    </div>
+    </div>
+
+
+    </div>
+    <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+
+  <script src="index.js"></script>
+    
+</body>
+</html>

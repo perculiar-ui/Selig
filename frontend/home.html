@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selig Anex</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="banner-image">
+        <img src="imgs/home.jpg" height="100px" width="100%" alt="Banner Image">
+        <div class="banner-content">
+            <h1>Selig Annex</h1>
+            <p>Moshi, Tanzania</p>
+            <p><i class="fas fa-map-marker-alt"></i> Moshi, Tanzania | Karibu!</p>
+        </div>
+    </div>
+
+    <div class="container">
+         <!-- Header Section -->
+  
+    <!-- Tabs Section -->
+    <div class="tabs">
+      <a href="home.html"><button class="tab active" data-section="Mocktails">Cocktail & Mocktail</button> </a>
+     <a href="drinks.html"> <button class="tab" data-section="Drinks">Drinks</button> </a>
+      <a href="hot-drinks.html"><button class="tab" data-section = "hot-drinks">Hot drinks</button></a>
+      <a href="menu.html"><button class="tab" data-section="Menu">Menu</button> </a>
+      <!--<button class="tab" data-section="Coffee">HighView Coffee</button>
+      <button class="tab" data-section="Mocktails">Cocktail & Mocktail</button> -->
+      <!-- <button class="tab" data-section="gallery">Living Gallery (High View) </button>
+      <button class="tab" data-section="spa">SPA</button>
+      <button class="tab" data-section="sangoma">Acrobatic show (Highview Hotel)</button>
+      <button class="tab" data-section="Activities">Activities</button>
+      <button class="tab" data-section="forms" onclick="window.location.href='Zita_Consent_Form_Online_Embedded_Logo.html'">Comment Form</button> !-->
+    </div>
+     <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search" class="search-input">
+      <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+<!-- Mocktails & cocktails Product Cards -->
+    <div id="Mocktails" class="section active">
+    <div class="main-menu" >
+      <h2 class="section-heading">Cocktail & Mocktail Categories</h2>
+    <div class="product-cards">
+        
+      <div class="card" onclick="showSubMenu('cl-Cocktail')">
+        <img src="images/cocktails/mojito cocktails.jpg" alt="Cocktail" class="card-image">
+        <h2>CLASSIC COCKTAILS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('fz-Cocktail')">
+        <img src="images/cocktails/frozen daiquire.jpg" alt="Cocktail" class="card-image">
+        <h2>FROZEN COCKTAILS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sp-Cocktail')">
+        <img src="images/cocktails/safari sparkling.png" alt="cocktail" class="card-image">
+        <h2>SPARKLING COCKTAILS</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('sh-Cocktail')">
+        <img src="images/cocktails/b-52.jpg" alt="cocktail" class="card-image">
+        <h2>SHORT COCKTAILS</h2>
+      </div> 
+      <div class="card" onclick="showSubMenu('mt-Cocktail')">
+        <img src="images/cocktails/dry martin.jpg" alt="cocktail" class="card-image">
+        <h2>MARTIN COCKTAILS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sa-Cocktail')">
+        <img src="imgs/red-wine.jpg" alt="cocktail" class="card-image">
+        <h2>SELIG ANEX COCKTAILS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('mocktail')">
+        <img src="images/mocktails/champion.jpg" alt="mocktail" class="card-image">
+        <h2>MOCKTAILS</h2>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+    <!--Classic cocktail-->
+    <div id="cl-Cocktail-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/cocktails/mojito cocktails.jpg" alt="Coke" class="some-image">
+            <div class="card-details">
+              <h5>Mojito</h5>
+              <h5>White rum,mint,sugar,lime,soda water</h5>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/pinacolada cocktail.webp" alt="fanta" class="some-image">
+            <div class="card-details">
+              <h5>Pinacolada</h5>
+              <h5>White rum,malibu,pineapple juice,cocunt milk</h5>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/manhatan cocktail.jpg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>Perfect - Manhattan</h5>
+              <h5>scotch whisky,dry vermouth,red vermouth,angostura bitter</h5>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/blue lagon cocktails.jpg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>Blue lagoon</h5>
+              <h5>vodka,blue curacao,lemon jiuce,sprite</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/whiskey sour.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>whisky sour</h5>
+              <h5>scotch whisky,lemon juice,sugar (white egg)</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/icea tea cocktails.jpg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>long island - ice tea</h5>
+              <h5>rum,gin,vodka,tequila,orange liqueur,lemon juice,coca cola</h5>
+              <h5>25,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/cocktails/maragarita cocktails.jpg" alt="Soda-water" class="some-image">
+            <div class="card-details">
+              <h5>Magarita</h5>
+              <h5>tequila,orange liqueur,lemon juice</h5>
+              <h5>12,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/cocktails/gin fizz.jpg" alt="Tonic-water" class="some-image">
+            <div class="card-details">
+              <h5>Gin fizz</h5>
+              <h5>gin,lemon juice,soda water</h5>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/cocktails/planter club.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Planter club</h5>
+              <h5>white rum,durk rum,pineapple juice,orange juice,angostura bitter</h5>
+              <h5>15,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/cocktails/moscow-mule.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Moscow mule</h5>
+              <h5>ginger beer,vodka,lemon juice</h5>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/cocktails/blue heaven.jpg" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Blue heaven</h5>
+              <p>white rum,amaretto,blue curacao,pineapple juice,lime</p>
+              <p>12,000</p>
+            </div> 
+          </div>
+    </div>
+    </div>
+
+    <!--Frozen Cocktail-->
+    <div id="fz-Cocktail-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/cocktails/frozen mango margarita.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Frozen mango margarita</h5>
+              <h5>Mango,tequila,orange liqueur,lemon juice</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/frozen margarita.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Frozen margarita</h5>
+              <h5>tequila,orange liqueur,lemon juice</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/frozen passion daiquire.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Frozen passion daiquire</h5>
+              <h5>white rum,passion juice,lemon juice,suga</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/frozen daiquire.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Frozen daiquire</h5>
+              <h5>white rum,lemon juice,sugar</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          </div>
+          </div>
+
+          <!--Sparkling Cocktail-->
+          <div id="sp-Cocktail-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/cocktails/kir fizz.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Kir fizz</h5>
+              <h5>black current cream,sparkling wine</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/blue fizz.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Blue fizz</h5>
+              <h5>tequila,orange liqueur,lemon juice</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <!--<div class="card">
+            <img src="images/cocktails/frozen passion daiquire.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Frozen passion daiquire</h5>
+              <h5>vodka,amaretto,blue curacao,lemon juice,sparkling wine</h5>
+              <h5>15,000</h5>
+            </div> -->
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/safari sparkling.png" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Safari</h5>
+              <h5>banana liqueur,orange liqueur,sparkling wine</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/tropical kiss.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Tropical kiss</h5>
+              <h5>orange juice,passion juice,sparkling wine</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/pimm`s fizz.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Pimm`s fizz</h5>
+              <h5>pimm`s No 1,sparkling wine</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/mango bellini.jpg" alt="Cocktail" class="some-image">
+            <div class="card-details">
+              <h5>Mango bellini</h5>
+              <h5>mango juice,sparkling wine</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          </div>
+          </div>
+
+          <!--Short Cocktail-->
+          <div id="sh-Cocktail-submenu" class="hidden">
+          <button class="back-button" onclick="goBack()">Back</button>
+          <div class="product-cards">
+        <div class="card">
+          <img src="images/cocktails/b-52.jpg" alt="Cocktail" class="spa-image">
+          <div class="spa-details">
+            <h3>B 52</h3>
+            <p>kahlua,baileys,cointreau</p>
+            <h5>12,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="images/cocktails/godfather.jpg" alt="Facial" class="spa-image">
+          <div class="spa-details">
+            <h3>godfather</h3>
+            <p>scotch whisky,amaretto</p>
+            <h5>12,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img src="images/cocktails/black russian.jpg" alt="couple massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Black russian</h3>
+              <p>vodka,kahlua</p>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/rusty nail.jpg" alt="Fullbody massage" class="spa-image">
+            <div class="spa-details">
+              <h3>rusty nail</h3>
+              <p>scotch whisky,drambuie</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/bob marley.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>bob marley</h3>
+              <p>Grenadine, pineapple juice,coconut rum,blue curacao </p>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/mai tai.jpg" alt="foot-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>mai tai</h3>
+              <p>white rum,dark rum,orange curacao,sugar syrup,lime</p>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/Irish coffe.jpg" alt="foot-reflexology" class="spa-image">
+            <div class="spa-details">
+              <h3>Irish coffe</h3>
+              <p>irish whisky,hot milk, sugar,cream</p>
+              <h5>10,000</h5>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <!--MArtin Cocktail-->
+
+            <div id="mt-Cocktail-submenu" class="hidden">
+          <button class="back-button" onclick="goBack()">Back</button>
+          <div class="product-cards">
+        <div class="card">
+          <img src="images/cocktails/dry martin.jpg" alt="Cocktail" class="spa-image">
+          <div class="spa-details">
+            <h3>dry martin cocktail</h3>
+            <p>gin,dry martin</p>
+            <h5>10,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="images/cocktails/mango martin.jpg" alt="Facial" class="spa-image">
+          <div class="spa-details">
+            <h3>mango martin</h3>
+            <p>vodka,mango juice</p>
+            <h5>10,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img src="images/cocktails/apple martin.jpg" alt="couple massage" class="spa-image">
+            <div class="spa-details">
+              <h3>apple martin</h3>
+              <p>vodka, apple juice</p>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/pineapple & ginger martin cocktail.jpg" alt="Fullbody massage" class="spa-image">
+            <div class="spa-details">
+              <h3>pineapple & ginger martin</h3>
+              <p>pineapple,ginger juice,vodka</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/orange & lime martin cocktails.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>orange & lime martin</h3>
+              <p>orange,lime juice,vodka</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/espresso martin.jpg" alt="foot-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>espresso martin</h3>
+              <p>	vodka,espresso,khalua,sugar</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/cocktails/vodkatin martin.jpg" alt="foot-reflexology" class="spa-image">
+            <div class="spa-details">
+              <h3>vodkatin</h3>
+              <p>vodka,dry martin</p>
+              <h5>10,000</h5>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <!--Selig Anex Cocktail-->
+
+            <div id="sa-Cocktail-submenu" class="hidden">
+          <button class="back-button" onclick="goBack()">Back</button>
+          <div class="product-cards">
+        <div class="card">
+          <img src="imgs/body-scrub.jpg" alt="Cocktail" class="spa-image">
+          <div class="spa-details">
+            <h3>the selig annex</h3>
+            <p>konyagi,banana liqueur,orange liqueur,orange juice</p>
+            <h5>15,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="imgs/facial-service.jpg" alt="Facial" class="spa-image">
+          <div class="spa-details">
+            <h3>selig caipirinha</h3>
+            <p>konyagi,lime juice,raw sugar</p>
+            <h5>12,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img src="imgs/couple massage.jpg" alt="couple massage" class="spa-image">
+            <div class="spa-details">
+              <h3>summer cocktail</h3>
+              <p>pineapple juice,passion juice,ginger,konyagi</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/fullbody.jpeg" alt="Fullbody massage" class="spa-image">
+            <div class="spa-details">
+              <h3>annex delight</h3>
+              <p>white rum,coconut liqueur,pineapple juice,mango juice,grenadine syrup</p>
+              <h5>150,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/back-massage.webp" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>annex dawa</h3>
+              <p>konyangi,ginger juice,lime juice,honey</p>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+            </div>
+            </div>
+
+            <!--Mocktails-->
+
+            <div id="mocktail-submenu" class="hidden">
+          <button class="back-button" onclick="goBack()">Back</button>
+          <div class="product-cards">
+        <div class="card">
+          <img src="images/mocktails/tutty fruity.jpg" alt="Cocktail" class="spa-image">
+          <div class="spa-details">
+            <h3>tutty fruity</h3>
+            <p>orange juice,pineapple juice,mango juice</p>
+            <h5>10,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="images/mocktails/summer cooler.jpg" alt="Facial" class="spa-image">
+          <div class="spa-details">
+            <h3>summer cooler</h3>
+            <p>pineapple,passion juice,ginger juice</p>
+            <h5>10,000</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img src="images/mocktails/mood operator.jpg" alt="couple massage" class="spa-image">
+            <div class="spa-details">
+              <h3>mood operator</h3>
+              <p>apple juice,pineapple juice,ginger juice</p>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/mocktails/passion thriller.jpg" alt="Fullbody massage" class="spa-image">
+            <div class="spa-details">
+              <h3>passion thriller</h3>
+              <p>oranger juice,passion juice,stoney tangawizi</p>
+              <h5>10,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/mocktails/shirley temple.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>shirley temple</h3>
+              <p>sprite,grenadine syrup</p>
+              <h5>7,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/mocktails/rose colada.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>rose colada</h3>
+              <p>pineapple juice,coconut cream,grenadine syrup</p>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/mocktails/vigin colada.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>vigin colada</h3>
+              <p>pineapple juice,coconut cream</p>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/mocktails/vigin mojito.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>vigin mojito</h3>
+              <p>mint,lemon,soda water,suger</p>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/mocktails/champion.jpg" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>champion</h3>
+              <p>orange juice,mango juice,banana</p>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+          
+            </div>
+            </div>
+
+            <!--Drinks Categories--
+        <div id="Drinks" class="section active">
+    <div class="main-menu" >
+      <h2 class="section-heading">DRINKS</h2>
+    <div class="product-cards">
+        
+      <div class="card" onclick="showSubMenu('soda')">
+        <img src="imgs/COCA.webp" alt="soda" class="card-image">
+        <h2>SODA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('beer')">
+        <img src="imgs/beer/beer.jpg" alt="beer" class="card-image">
+        <h2>BEER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('whiskey')">
+        <img src="imgs/whisky/Jameson.jpeg" alt="whiskey" class="card-image">
+        <h2>WHISKEY</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('gin')">
+        <img src="imgs/gin/Bombay.jpeg" alt="gin" class="card-image">
+        <h2>GIN & SPIRIT</h2>
+      </div> 
+      <div class="card" onclick="showSubMenu('Liquer')">
+        <img src="imgs/Liquer/Amarula.jpeg" alt="liquer" class="card-image">
+        <h2>LIQUER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('red-wine')">
+        <img src="imgs/red-wine.jpg" alt="red-wine" class="card-image">
+        <h2>RED WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('aperatifs')">
+        <img src="imgs/sparkling-wine.jpg" alt="aperatifs" class="card-image">
+        <h2>APERATIFS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('vodka')">
+        <img src="imgs/vodka/Absolute Blue.jpeg" alt="vodka" class="card-image">
+        <h2>VODKA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('brandy')">
+        <img src="imgs/brandy/Hennessy.jpeg" alt="brandy" class="card-image">
+        <h2>COURQNAQ & BRANDY</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('tequila')">
+        <img src="imgs/tequila/camino tequila.jpeg" alt="tequila" class="card-image">
+        <h2>TEQUILA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('rum')">
+        <img src="imgs/rum/barcadi white.jpg" alt="rum" class="card-image">
+        <h2>RUM</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('white-wine')">
+        <img src="imgs/white wine/B&G reserve chardonnay.jpeg" alt="white-wine" class="card-image">
+        <h2>WHITE WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sparkling-wine')">
+        <img src="imgs/sparkling-wine/dubois.jpg" alt="sparkling-wine" class="card-image">
+        <h2>SPARKLING WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('champagne')">
+        <img src="imgs/champagne/Laurent-Perrier Brut.jpeg" alt="champagne" class="card-image">
+        <h2>CHAMPAGNE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sparkling-wine')">
+        <img src="imgs/sparkling-wine.jpg" alt="sparkling-wine" class="card-image">
+        <h2>SPARKLING WINE NON ALCOHOL</h2>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+      <-Soda-
+    <div id="soda-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/COCA.webp" alt="Coke" class="some-image">
+            <div class="card-details">
+              <h5>CocaCola</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/fanta.jpeg" alt="fanta" class="some-image">
+            <div class="card-details">
+              <h5>Fanta</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/sprite.jpeg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>Sprite</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/cola-zero.jpeg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>Coca-zero</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/stoney-tanagwizi.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>Stone Tangawizi</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/Bitter-lemon.jpeg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>Bitter-lemon</h5>
+              <h5>$2</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/soda water.webp" alt="Soda-water" class="some-image">
+            <div class="card-details">
+              <h5>Soda water</h5>
+              <h5>$2</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/tonic water.jpg" alt="Tonic-water" class="some-image">
+            <div class="card-details">
+              <h5>Tonic water</h5>
+              <h5>$2</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/Ginger ale.webp" alt="Ginger-ale" class="some-image">
+            <div class="card-details">
+              <h5>Ginger ale</h5>
+              <h5>$2</h5>
+            </div> 
+          </div>
+    </div>
+    </div> -->
+
+    </div>
+    <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+
+  <script src="index.js"></script>
+    
+</body>
+</html>

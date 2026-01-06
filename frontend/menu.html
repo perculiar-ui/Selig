@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selig Anex</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="banner-image">
+        <img src="imgs/home.jpg" height="100px" width="100%" alt="Banner Image">
+        <div class="banner-content">
+            <h1>Selig Annex</h1>
+            <p>Moshi, Tanzania</p>
+            <p><i class="fas fa-map-marker-alt"></i> Moshi, Tanzania | Karibu!</p>
+        </div>
+    </div>
+
+    <div class="container">
+         <!-- Header Section -->
+  
+    <!-- Tabs Section -->
+    <div class="tabs"> <a href="home.html">
+      <button class="tab" data-section="Mocktails">Cocktail & Mocktail</button> </a>
+      <a href="drinks.html"><button class="tab" data-section="Drinks">Drinks</button></a>
+      <a href="hot-drinks.html"><button class="tab" data-section = "hot-drinks">Hot drinks</button></a>
+      <a href="menu.html"><button class="tab active" data-section="Menu">Menu</button></a>
+      <!--<button class="tab" data-section="Coffee">HighView Coffee</button>
+      <button class="tab" data-section="Mocktails">Cocktail & Mocktail</button> -->
+      <!-- <button class="tab" data-section="gallery">Living Gallery (High View) </button>
+      <button class="tab" data-section="spa">SPA</button>
+      <button class="tab" data-section="sangoma">Acrobatic show (Highview Hotel)</button>
+      <button class="tab" data-section="Activities">Activities</button>
+      <button class="tab" data-section="forms" onclick="window.location.href='Zita_Consent_Form_Online_Embedded_Logo.html'">Comment Form</button> !-->
+    </div>
+     <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search" class="search-input">
+      <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+
+            <!--food Categories-->
+        <div id="Menu" class="section active">
+    <div class="main-menu" >
+      <h2 class="section-heading">MENU</h2>
+    <div class="product-cards">
+        
+      <div class="card" onclick="showSubMenu('soup')">
+        <img src="images/Menu/soup/cream-of-mushoom-soup.jpg" alt="soda" class="card-image">
+        <h2>SOUP</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('breakfast')">
+        <img src="images/Menu/soup/CONTINENTAI breakfast.jpg" alt="beer" class="card-image">
+        <h2>BREAKFAST</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('pancake')">
+        <img src="images/Menu/pancakes/FRENCH TOAST.jpg" alt="whiskey" class="card-image">
+        <h2>PANCAKE & TOASTS</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('sandwich')">
+        <img src="images/Menu/sandwich/Chicken-Mayo-Sandwich.jpg" alt="gin" class="card-image">
+        <h2>SANDWICH</h2>
+      </div> 
+      <div class="card" onclick="showSubMenu('burger')">
+        <img src="images/Menu/burger/BEEF BURGER.jpg" alt="liquer" class="card-image">
+        <h2>BURGER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('spaghetti')">
+        <img src="images/Menu/spagetti/BOLOGNISE.jpg" alt="red-wine" class="card-image">
+        <h2>SPAGHETTI </h2>
+      </div>
+      <div class="card" onclick="showSubMenu('pasta')">
+        <img src="images/Menu/pasta/VEGETABLE PASTA.jpg" alt="aperatifs" class="card-image">
+        <h2>PASTA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('dishes')">
+        <img src="images/Menu/main dish/BEEF FILLET STEAK.jpg" alt="vodka" class="card-image">
+        <h2>MAIN DISHES</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('salad')">
+        <img src="images/Menu/salad/MIXED SALAD.jpg" alt="brandy" class="card-image">
+        <h2>SALADS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('makange')">
+        <img src="images/Menu/makange/ LOCAL CHICKEN MAKANGE 1:2.jpg" alt="tequila" class="card-image">
+        <h2>MAKANGE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('ch-food')">
+        <img src="imgs/rum/barcadi white.jpg" alt="rum" class="card-image">
+        <h2>CHAGGA FOOD</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sa-special')">
+        <img src="imgs/white wine/B&G reserve chardonnay.jpeg" alt="white-wine" class="card-image">
+        <h2>SELIG ANNEX SPECIALS </h2>
+      </div>
+      <div class="card" onclick="showSubMenu('pizza')">
+        <img src="images/Menu/pizza/BEEF  PIZZA.jpg" alt="sparkling-wine" class="card-image">
+        <h2>PIZZA </h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sf-lunch')">
+        <img src="imgs/champagne/Laurent-Perrier Brut.jpeg" alt="champagne" class="card-image">
+        <h2>SAFARI LUNCH BOX</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('kisinia')">
+        <img src="imgs/sparkling-wine.jpg" alt="sparkling-wine" class="card-image">
+        <h2>KISINIA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('fruits')">
+        <img src="imgs/sparkling-wine.jpg" alt="sparkling-wine" class="card-image">
+        <h2>FRUITS</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('desserts')">
+        <img src="imgs/sparkling-wine.jpg" alt="sparkling-wine" class="card-image">
+        <h2>DESSERTS</h2>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+      <!--MSOSI-->
+      <!--SOUP-->
+      <div id="soup-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/soup/cream-of-mushoom-soup.jpg" alt="beer" class="some-image">
+            <div class="card-details">
+              <h5>CREAM OF MUSHROOM</h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/soup/CREAM OF VEG.jpg" alt="Kilimanjaro" class="some-image">
+            <div class="card-details">
+              <h5>CREAM OF VEG </h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/soup/ZUCCHIN SOUP.jpg" alt="Safari" class="some-image">
+            <div class="card-details">
+              <h5>ZUCCHIN SOUP</h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/soup/BUTTERNUT SOUP.jpg" alt="redbull" class="some-image">
+            <div class="card-details">
+              <h5>BUTTERNUT SOUP</h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/soup/LOCAN CHICKEN SOUP 1:4.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>LOCAN CHICKEN SOUP 1/4</h5>
+              <h5>12,000</h5>
+            </div>
+            
+          </div>
+         <div class="card">
+            <img src="images/Menu/soup/BEEF SOUP.jpg" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>BEEF SOUP</h5>
+              <h5>11,000</h5>
+            </div> 
+         </div>
+    </div> 
+    </div>
+    <!--Breakfast-->
+    <div id="breakfast-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/soup/LIGHT & HEAIHY.jpg" alt="Wild Africa" class="some-image">
+            <div class="card-details">
+              <h5>WLIGHT & HEAIHY</h5>
+              <p>beef sausage, beef becon, toast bread, grill tomato ,2egg pancake</p>
+              <h5>15,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/soup/CONTINENTAI breakfast.jpg" alt="Amarula" class="some-image">
+            <div class="card-details">
+              <h5>CONTINENTAI</h5>
+              <p>garlic mushroom, sauteed potato, beef sausage, beef becon, grill tomato, 2egg of you choice  & fresh juice </p>
+              <h5>17,000</h5>
+            </div> 
+          </div>
+        </div>    
+    </div>
+    <!--pancakes-->
+    <div id="pancake-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/pancakes/NUTELLA PANCAKES.jpg" alt="Nutella Pancakes" class="some-image">
+            <div class="card-details">
+              <h5>NUTELLA PANCAKES</h5>
+              <h5>8,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/pancakes/SAVOURY PANCAKES.png" alt="savoury" class="some-image">
+            <div class="card-details">
+              <h5>SAVOURY PANCAKES</h5>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/pancakes/FRENCH TOAST.jpg" alt="french" class="some-image">
+            <div class="card-details">
+              <h5>FRENCH TOAST </h5>
+              <h5>8,000</h5>
+            </div> 
+          </div>
+        </div>    
+    </div>
+    <!--sandwich-->
+    <div id="sandwich-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/sandwich/EGG SANDWICH.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>EGG SANDWICH </h5>
+              <p>classic cheese leetuce & avacado</p>
+              <h5>8,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/sandwich/Chicken-Mayo-Sandwich.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN MAYO SANDWICH</h5>
+              <p>grilled chicken onion green peper& mushroom</p>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/sandwich/VEGETABLE SANDWICH.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE SANDWICH</h5>
+              <p>grilled vegetable mushroom & avocado</p>
+              <h5>10,000</h5>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!--Burger-->
+     <div id="burger-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/burger/BEEF BURGER.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>BEEF BURGER  </h5>
+              <h5>17,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/burger/BEEF CHEESE BURGER.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>BEEF CHEESE BURGER</h5>
+              <h5>18,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/burger/CHICKEN BURGER.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN BURGER</h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/burger/VEGETABLE CHEESE BURGER.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE CHEESE BURGER</h5>
+              <h5>15,000</h5>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!--SPAGETTI-->
+    <div id="spaghetti-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/spagetti/BOLOGNISE.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>BOLOGNISE </h5>
+              <h5>17,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/spagetti/CARBONARA.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CARBONARA</h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/spagetti/VEGETABLE.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE</h5>
+              <h5>15,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+    <!--PASTA-->
+    <div id="pasta-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/pasta/CHICKEN PASTA.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN PASTA  </h5>
+              <h5>17,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/pasta/PASTA BOLOGNESE.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>PASTA BOLOGNESE</h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/pasta/VEGETABLE PASTA.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE PASTA</h5>
+              <h5>15,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--MAIN DISHES-->
+<div id="dishes-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/main dish/BEEF FILLET STEAK.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>BEEF FILLET STEAK </h5>
+              <h5>22,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/main dish/GRILL CHICKEN BREAST.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>GRILL CHICKEN BREAST</h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/main dish/GRILL FISH FILLET.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>GRILL FISH FILLET</h5>
+              <h5>20,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+    <!--SALADS-->
+<div id="salad-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/salad/ACOCADO SALAD.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>ACOCADO SALAD  </h5>
+              <h5>11,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/salad/MIXED SALAD.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>MIXED SALAD</h5>
+              <h5>10,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/salad/BEEF SALAD.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF SALAD </h5>
+              <h5>12,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/salad/SWEET CHILLI CHICKEN SALAD.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>SWEET CHILLI CHICKEN SALAD </h5>
+              <h5>13,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="images/Menu/salad/SELIG ANNEX SALAD.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>SELIG ANNEX SALAD </h5>
+              <h5>10,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+    <!--MAKANGE-->
+    <div id="makange-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/makange/ LOCAL CHICKEN MAKANGE 1:2.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5> LOCAL CHICKEN MAKANGE 1/2</h5>
+              <h6>served with chips/rice/mashed potato/ugali</h6>
+              <h5>24,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/makange/FISH SATO MAKANGE.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>FISH SATO MAKANGE</h5>
+              <h6>served with chips/rice/mashed potato/ugali</h6>
+              <h5>20,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/makange/BEEF MAKANGE  1:2.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF MAKANGE  1/2 </h5>
+              <h6>served with chips/rice/mashed potato/ugali</h6>
+              <h5>22,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--Chagga FOOD-->
+<div id="ch-food-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>NG'ANDEN SAMAKI SATO </h5>
+              <h5>20,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>NG'ANDEN CHICKEN </h5>
+              <h5>24,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>NG'ANDEN BEEF  </h5>
+              <h5>22,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF STEW </h5>
+              <h5>22,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN CARRY </h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE CARRY </h5>
+              <h5>12,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF ROAST </h5>
+              <h5>22,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>FRIED LIVER </h5>
+              <h5>20,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--SELIG ANEX SPECIAL-->
+<div id="sa-special-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>CHIPS MAYAI </h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CHIPS MAYAI SEUSAGE ,CHEESE & VEG</h5>
+              <h5>10,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN CHIPS 1/4 </h5>
+              <h5>12,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN /BEEF MSHIKAKI</h5>
+              <h5>13,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF KITUNGUU( 1/20) </h5>
+              <h5>22,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>KUKU KUTUNGUU (1/2)</h5>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+    <!--pizza-->
+    <div id="pizza-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/pizza/MARGARITHA PIZZA.jpg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5> MARGARITHA PIZZA</h5>
+              <h6>tomoto sause, mozarella cheese oregano</h6>
+              <h5>13,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/pizza/Chicken-Pizza.jpg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN PIZZA </h5>
+              <h6>tomato sause, mozarella cheese chicken </h6>
+              <h5>16,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/pizza/BEEF  PIZZA.jpg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF  PIZZA </h5>
+              <h6>beef, tomato sause ,mozarella cheese</h6>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+    <!--safari lunch box-->
+<div id="sf-lunch-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5> SAFARI LUNCH BOX  NORMAL</h5>
+              <h6>JUICE, APPLE,EGG,SWEET BANANA VEGETABLE,<br>CHICKEN LEG, SANDWICH,SAUSEGE, BEEF SAMOSA</h6>
+              <h5>20,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>SAFARI LUNCH BOX  VERGETABLE</h5>
+              <h6>JUICE, APPLE, SWEET BANANA, EGG,<BR>VEG SAMOSA, VEGETABLE, VEG SANDWICH  </h6>
+              <h5>18,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--KISINIA-->
+<div id="kisinia-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>KISINIA CHA WATU 2 </h5>
+              <H6>KUKU 1/2,MISHIKAKI 2,BEEF ROAST  1/2,SAMOSA 2PC,SAUSEGE 4PC,WALI/ PILAU,NDIZI ROAST,NDIZI ROAST</H6>
+              <h5>35,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>KISINIA CHA WATU 3-4 </h5>
+              <H6>KUKU 1 MZIMA,NDIZI MZUZU 4,MISHIKAKI 4,BEEF ROAST,WALI / PILAU,SAMOSA 4 PC,SAUSEGE 6,CHIPS MAYAI , KAVU,SALAD</H6>
+              <h5>60,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>PIZZA KISINIA WATU 3-4  </h5>
+              <h5>45,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/russia emperial.jpeg" alt="Russia emperial" class="some-image">
+            <div class="card-details">
+              <h5>BEEF STEW </h5>
+              <H6>BEEF, CHICKEN. SAUSEGE,MOZARELLA CHEESE, SWEET CORN ,CHEDDAE CHEESE, BLACK OLIVES</H6>
+              <h5>22,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--FRUITS-->
+<div id="fruits-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5> FRUITS PLATTER</h5>
+              <h5>6,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>FRUITS SALAD </h5>
+              <h5>4,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+<!--DESERTS-->
+<div id="desserts-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5> SCICED CAKE</h5>
+              <h5>4,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>CHOCOLATE MUFFINS </h5>
+              <h5>3,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>BANANA MUFFINS  </h5>
+              <h5>4,000</h5>
+            </div>
+          </div>
+          
+    </div>
+    </div>
+
+
+
+    </div>
+    <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+
+  <script src="index.js"></script>
+    
+</body>
+</html>
