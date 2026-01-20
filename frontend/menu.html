@@ -55,6 +55,14 @@
         <img src="images/Menu/soup/CONTINENTAI breakfast.jpg" alt="beer" class="card-image">
         <h2>BREAKFAST</h2>
       </div>
+      <div class="card" onclick="showSubMenu('eggs')">
+        <img src="images/Menu/egg/Scrambled-Eggs.jpg" alt="whiskey" class="card-image">
+        <h2>EGGS / OMELETTES</h2>
+      </div>
+       <div class="card" onclick="showSubMenu('bites')">
+        <img src="images/Menu/bites/beef-samosa.jpg" alt="bites" class="card-image">
+        <h2>BITTES / STARTERS</h2>
+      </div>
       <div class="card" onclick="showSubMenu('pancake')">
         <img src="images/Menu/pancakes/FRENCH TOAST.jpg" alt="whiskey" class="card-image">
         <h2>PANCAKE & TOASTS</h2>
@@ -196,6 +204,114 @@
           </div>
         </div>    
     </div>
+    <!--Eggs / Omelettes-->
+    <div id="eggs-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/egg/spanish-eggs.jpg" alt="spanish eggs" class="some-image">
+            <div class="card-details">
+              <h5>SPANISH EGGS</h5>
+              <h5>4,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/egg/plain-omelette.jpg" alt="plain" class="some-image">
+            <div class="card-details">
+              <h5>PLAIN OMELETTES</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/egg/Scrambled-Eggs.jpg" alt="Scrambled-Eggs" class="some-image">
+            <div class="card-details">
+              <h5>SCARMBLED EGGS </h5>
+              <h5>4,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/egg/boiled-eggs.jpg" alt="boiled" class="some-image">
+            <div class="card-details">
+              <h5>BOILED 2 EGGS</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+        </div>    
+    </div>
+
+    <!--bites-->
+    <div id="bites-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="images/Menu/bites/beef-samosa.jpg" alt="beef-samosa" class="some-image">
+            <div class="card-details">
+              <h5>BEEF SAMOSA 3PCS</h5>
+              <h5>5,000</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="images/Menu/bites/veg-samosa.jpg" alt="veg-samosa" class="some-image">
+            <div class="card-details">
+              <h5>VEGETABLE SAMOSA 3PCS</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/bites/chapati.jpg" alt="chapati" class="some-image">
+            <div class="card-details">
+              <h5>CHAPATI 1pc</h5>
+              <h5>1,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/bites/chicken-wings.jpg" alt="wings" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN WIGGS 6PCS</h5>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/Menu/bites/fish-fingers.jpg" alt="fingers" class="some-image">
+            <div class="card-details">
+              <h5>FISH FINGERS 5PCS</h5>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/Menu/bites/chicken-niggets.jpg" alt="niggets" class="some-image">
+            <div class="card-details">
+              <h5>CHICKEN NUGGETS</h5>
+              <h5>12,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/Menu/bites/plain-chips.jpg" alt="chips" class="some-image">
+            <div class="card-details">
+              <h5>PLAIN CHIPS</h5>
+              <h5>3,000</h5>
+            </div> 
+          </div>
+           <div class="card">
+            <img src="images/Menu/bites/masala-chips.jpg" alt="chips" class="some-image">
+            <div class="card-details">
+              <h5>MASALA CHIPS</h5>
+              <h5>5,000</h5>
+            </div> 
+          </div>
+          <div class="card">
+            <img src="images/Menu/bites/hotdog-fries.jpg" alt="hot-dog" class="some-image">
+            <div class="card-details">
+              <h5>HOT DOG WITH FIRES</h5>
+              <h5>10,000</h5>
+            </div> 
+          </div>
+        </div>    
+    </div>
+
+
     <!--pancakes-->
     <div id="pancake-submenu" class="hidden">
         <button class="back-button" onclick="goBack()">Back</button>
@@ -592,6 +708,22 @@
             <div class="card-details">
               <h5>BEEF  PIZZA </h5>
               <h6>beef, tomato sause ,mozarella cheese</h6>
+              <h5>17,000</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Menu/pizza/vegetable-square.jpg" alt="vegetable-square" class="some-image">
+            <div class="card-details">
+              <h5>Vegetable square  PIZZA </h5>
+              <h6>mushroom, tomato sause ,mozarella cheese, vegetable chili chicken</h6>
+              <h5>18,000</h5>
+            </div>
+          </div>
+           <div class="card">
+            <img src="images/Menu/pizza/selig-pizza.jpg" alt="vegetable-square" class="some-image">
+            <div class="card-details">
+              <h5>Selig  PIZZA </h5>
+              <h6>beef becon, tomato sause ,mozarella cheese, sweet paper</h6>
               <h5>17,000</h5>
             </div>
           </div>
